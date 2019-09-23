@@ -8,5 +8,5 @@ page.summarize()
 page.harvest_html()
 
 crawler = Crawler(depth=10)
-crawler.crawl_randomly(page)
+crawler.crawl_randomly(page, threads=1)
 
