@@ -16,7 +16,13 @@ class Crawler(object):
             depth (int): depth to crawl
             time (int): time (secs) to wait between each website change
             threads (int): how many crawlers to spawn
+
+        Example:
+            >>> crawler = Crawler(depth=10)
+            >>> crawler.crawl_randomly(page, threads=1)
+
         """
+
         self.depth = depth
         self.time = time
         self.threads = threads
